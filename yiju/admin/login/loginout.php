@@ -1,0 +1,11 @@
+<?php
+    session_start();
+    unset($_SESSION['user']);
+if(isset($_SESSION['user'])){
+    $href="../admin.php";
+    $msg="退出失败";
+}else{
+    $href="login.php";
+    $msg="退出成功";
+}
+include("../message.php");

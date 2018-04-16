@@ -1,0 +1,30 @@
+<?php
+session_start();
+header("Content-Type:text/html;charset=utf-8");
+$user=$_POST["user"];
+$pass=$_POST["pass1"];
+$code=$_POST["code"];
+if(strtoupper($code)!=$_SESSION["code"]){
+    $msg="验证码错误";
+    $href="login.php";
+    include("../message.php");
+    exit();//退出脚本。相当于return
+}
+include "../../public/db.php";
+$sql="SELECT * FROM `admin` where `name`='{$user}'";
+$r=$db->query($sql);
+$arr=$r->fetch_array(MYSQLI_ASSOC);
+if(isset($arr)){
+    if($arr["password"]===$pass){
+        $href="../admin.php";
+        $msg="成功";
+        $_SESSION['user']=$user;
+    }else{
+        $href="login.php";
+        $msg="密码错误";
+    }
+}else{
+    $href="login.php";
+    $msg="用户名不存在";
+}
+include("../message.php");

@@ -1,0 +1,117 @@
+.chanpin_bottom{
+	width: 1200px;
+	height: 830px;
+	margin:0 auto; 
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.chanpin_bottom ul{
+	width: 1200px;
+	height: 200px;
+}
+.chanpin_bottom li{
+	width: 262px;
+	height: 378px;
+	border: 2px solid #D7D7D7;
+	float: left;
+	margin-right: 38px;
+	position: relative;
+	margin-bottom: 31px;
+}
+.chanpin_bottom_part ul li:nth-child(4n){
+	margin-right: 0px;
+}
+.chanpin_bottom_cover{
+	color: #fff;
+	position: absolute;
+	width: 271px;
+	height: 357px;
+	top: 9px;
+	left: 10px;
+	background-color: rgba(25, 74, 95, 0.9);
+	box-shadow: 0px 5px 20px 5px #EEEFF0;
+	opacity: 0;
+}
+.chanpin_bottom_cover h1{
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-top: 35px;
+	margin-left: 23px;
+}
+.chanpin_bottom_cover h2{
+	font-size: 24px;
+	line-height: 24px;
+	margin-top: 13px;
+	margin-left: 23px;
+}
+.chanpin_bottom_cover_more{
+	width: 23px;
+	height: 23px;
+	border-radius: 23px;
+	background-color: #F5C813;
+	color: #000;
+	margin-top: 24px;
+	margin-left: 23px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 23px;
+}
+.chanpin_bottom img{
+	width: 271px;
+	height: 357px;
+	margin-top: 9px;
+	margin-left: 12px;
+	box-shadow: -2px 2px 20px 2px #EFEFEF;
+}
+.chanpin_bottom_huang{
+	width: 2px;
+	height: 355px;
+	background-color: #F5C813;
+	position: absolute;
+	top: 10px;
+	right:-2px;
+}
+.chanpin_bottom li:hover .chanpin_bottom_cover{
+	opacity: 1;
+}
+.chanpin_lunbo{
+	width: 323px;
+	height: 24px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	z-index: 88;
+	display: flex;
+	justify-content: space-between;
+}
+.chanpin_lunbo p{
+	float: left;
+	font-size: 15px;
+}
+.chanpin_lunbo p:nth-of-type(2){
+	float: right;
+}
+.chanpin_lunbo a,.chanpin_lunbo span{
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	background-color: #E5E5E5;
+	margin:0 10px;
+	float: left;
+	color: #184F6B;
+}
+.chanpin_lunbo span{
+	background-color: #184F6B;
+	color: #fff;
+}
+.end{
+	margin-top: 50px;
+}
+.chanpin_bottom_all{
+	width: 3600px;
+}
+.chanpin_bottom_part{
+	float: left;
+}
